@@ -6,6 +6,7 @@
 #include "DataFormats/CTPPSReco/interface/TotemRPLocalTrack.h"
 #include "DataFormats/CTPPSDetId/interface/TotemRPDetId.h"
 #include "DataFormats/Provenance/interface/RunID.h"
+#include "DataFormats/CTPPSDetId/src/TotemRPDetId.cc"
 
 #include "EffAnalyzer/TreeProducer/interface/ProtonKinematicsUtils.h"
 

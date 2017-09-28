@@ -333,7 +333,7 @@ TreeProducer::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup)
   for ( edm::DetSetVector<TotemRPLocalTrack>::const_iterator it=rpLocalTracks->begin(); it!=rpLocalTracks->end(); it++ ) {
     const TotemRPDetId detid( it->detId() );
     const unsigned short side = detid.arm(),
-      pot = detid.romanPot();
+      pot = detid.rp();
     const CTPPSAlCa::RPAlignmentConstants::Quantities align_quant = align.quantities( it->detId() );
     
     for ( edm::DetSet<TotemRPLocalTrack>::const_iterator trk=it->begin(); trk!=it->end(); trk++ ) {
